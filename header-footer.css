@@ -1,0 +1,29 @@
+header{
+    background-color: rgb(30, 30, 30);
+}
+.brand {
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+}
+.menu{
+    font-size: 30px;
+}
+.tabs ul li a {
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+}
+.tabs ul li .active{
+    border-bottom: 2px solid rgb(109, 109, 109);
+
+}
+.tabs ul li :not(.active):hover{
+    color: rgb(131, 131, 131);
+}
+.tabs{
+    background-color: rgb(30, 30, 30);
+    color: azure;
+}
+.menu:hover{
+    background-color: rgb(109, 109, 109);
+    border-radius: 200px;
+}

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotating Fill Animation with Conic Gradient</title>
+<style>
+  .container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: conic-gradient(
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      violet,
+      red
+    );
+    background-size: 600% 600%; /* You can adjust the size as per your preference */
+    animation: rotate 5s linear infinite; /* Change the duration and timing function as needed */
+  }
+  
+  @keyframes rotate {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="circle"></div>
+</div>
+</body>
+</html>
